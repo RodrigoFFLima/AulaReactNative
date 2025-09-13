@@ -34,4 +34,10 @@ export const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "bold",
   },
+  inputText: {
+    borderColor: "gray",
+    width: 200,
+    borderWidth: 1,
+    marginBottom: 20,
+  },
 });

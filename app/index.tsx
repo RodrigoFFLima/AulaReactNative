@@ -1,7 +1,8 @@
 import SuperButton from "@/components/superButton";
+import SuperTextInput from "@/components/superTextInput";
 import SuperTitle from "@/components/superTitle";
 import { useState } from "react";
-import { Text, TextInput, View } from "react-native";
+import { Text, View } from "react-native";
 
 export default function Index() {
   const [count, setCount] = useState(0);
@@ -19,17 +20,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <TextInput
-        value={texto}
-        onChangeText={setTexto}
-        placeholder="Digite algo"
-        style={{
-          borderColor: "gray",
-          width: 200,
-          borderWidth: 1,
-          marginBottom: 20,
-        }}
-      ></TextInput>
+      <SuperTextInput value={texto} onChangeText={setTexto} />
       <SuperTitle title={"Contador: " + count} uppercase />
 
       <SuperButton
